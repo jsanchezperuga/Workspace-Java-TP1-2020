@@ -28,7 +28,6 @@ public class Saludador {
 		// TODO -- Completar
 		diccionario = new Diccionario();
 		cargarDiccionario(diccionario);
-		elegirIdioma(idioma);
 	}
 
 	private void cargarDiccionario(Diccionario diccionario) {
@@ -41,7 +40,6 @@ public class Saludador {
 		diccionario.agregarTermino("ES", "DESPEDIDA", "¡Hasta luego! Esperamos verte pronto de nuevo, ");
 		diccionario.agregarTermino("ES", "IDIOMA_INVALIDO", "¡Hubo un error!");
 		
-		diccionario.agregarIdioma("EN", "Inglés");
 		diccionario.agregarTermino("EN", "BIENVENIDA", "¡Welcome!");
 		diccionario.agregarTermino("EN", "INGRESAR_NOMBRE", "Enter your name, please:");
 		diccionario.agregarTermino("EN", "LINDONOMBRE", "¡That's a cute name!");
@@ -57,21 +55,9 @@ public class Saludador {
 		}
 	}
 
-	private String getTermByKey(String key){
-		return this.diccionario.obtenerTermino(this.idioma, key);
-	}
-	
 	public void run() {
-
-		input = new Scanner(System.in);
-		String nombre;
 		// TODO - Usa lo definido en el resto de la clase
-		System.out.println(getTermByKey("BIENVENIDA"));
-		System.out.println(getTermByKey("INGRESAR_NOMBRE"));
-		nombre = input.nextLine();
-		System.out.println(getTermByKey("LINDONOMBRE"));
-		System.out.println(getTermByKey("DESPEDIDA") + nombre);	
-		//input.close();
+		
 	}
 
 }

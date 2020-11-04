@@ -71,7 +71,6 @@ public class Saludador {
 		nombre = input.nextLine();
 		System.out.println(getTermByKey("LINDONOMBRE"));
 		System.out.println(getTermByKey("DESPEDIDA") + nombre);	
-		//input.close();
 	}
 
 }

@@ -62,16 +62,13 @@ public class Saludador {
 	}
 	
 	public void run() {
-
-		input = new Scanner(System.in);
 		String nombre;
 		// TODO - Usa lo definido en el resto de la clase
 		System.out.println(getTermByKey("BIENVENIDA"));
 		System.out.println(getTermByKey("INGRESAR_NOMBRE"));
 		nombre = input.nextLine();
 		System.out.println(getTermByKey("LINDONOMBRE"));
-		System.out.println(getTermByKey("DESPEDIDA") + nombre);	
-		//input.close();
+		System.out.println(getTermByKey("DESPEDIDA") + nombre);		
 	}
 
 }

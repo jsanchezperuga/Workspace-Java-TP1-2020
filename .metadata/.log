@@ -613,3 +613,6 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 
 !ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-11-03 23:37:59.173
 !MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.ui.navigator.resources 4 0 2020-11-04 00:05:19.886
+!MESSAGE Could not acquire INavigatorContentService: Project Explorer not found.
