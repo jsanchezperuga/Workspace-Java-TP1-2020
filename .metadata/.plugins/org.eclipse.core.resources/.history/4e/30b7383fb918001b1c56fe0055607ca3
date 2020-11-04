@@ -1,0 +1,35 @@
+package ar.edu.ort.tp1.genericsD;
+
+public class Pila<E> implements IPila<E> {
+
+	@Override
+	public void push(E elemento) {
+		// TODO Auto-generated method stub
+		push(elemento);
+	}
+
+	@Override
+	public E pop() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public E peek() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean isFull() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

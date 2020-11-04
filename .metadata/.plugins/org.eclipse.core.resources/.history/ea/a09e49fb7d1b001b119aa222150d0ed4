@@ -1,0 +1,8 @@
+package ar.edu.ort.TP1.TP3.ej01_Empleados;
+
+public class TP2Test1 {
+
+	public static void main(String[] args) {
+	}
+
+}

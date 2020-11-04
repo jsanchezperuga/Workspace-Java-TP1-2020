@@ -1,0 +1,62 @@
+package ar.edu.ort.TP1.TP2.Ej1;
+
+public class NumeroTelefonico {
+
+	private int caracteristica;
+	private int numeroDeAbonado; 
+	private int codigoDePais;
+	private TipoDeLinea tipo;
+	
+	public NumeroTelefonico(){
+		setCaracteristica(-1);
+		setCodigoDePais(-1);
+		setNumeroDeAbonado(-1);
+		setTipo(null);
+	}
+
+	public NumeroTelefonico( int codigoDePais, int caracteristica, int numeroDeAbonado, TipoDeLinea tipo) {
+		super();
+		this.caracteristica = caracteristica;
+		this.numeroDeAbonado = numeroDeAbonado;
+		this.codigoDePais = codigoDePais;
+		this.tipo = tipo;
+	}
+
+	public int getCaracteristica() {
+		return caracteristica;
+	}
+
+	public int getNumeroDeAbonado() {
+		return numeroDeAbonado;
+	}
+
+	public int getCodigoDePais() {
+		return codigoDePais;
+	}
+
+	public TipoDeLinea getTipo() {
+		return tipo;
+	}
+
+	private void setCaracteristica(int caracteristica) {
+		this.caracteristica = caracteristica;
+	}
+
+	private void setNumeroDeAbonado(int numeroDeAbonado) {
+		this.numeroDeAbonado = numeroDeAbonado;
+	}
+
+	private void setCodigoDePais(int codigoDePais) {
+		this.codigoDePais = codigoDePais;
+	}
+
+	private void setTipo(TipoDeLinea tipo) {
+		this.tipo = tipo;
+	}
+	
+	public String getValor(){
+		return "+" + getCodigoDePais() + "-" + this.caracteristica + "-" + this.numeroDeAbonado;
+	}
+	
+	
+}

@@ -1,0 +1,52 @@
+package ar.edu.ort.tp1.genericsD;
+
+import java.util.ArrayList;
+
+public class Pila<E> implements IPila<E> {
+	
+	private int topePila;
+	private ArrayList<E> listaPila;
+
+	public Pila(int topePila) {		
+		setTopePila(topePila);
+		listaPila = new ArrayList<E>();
+	}
+
+	public Pila() {
+		listaPila = new ArrayList<E>();
+	}
+
+
+	private void setTopePila(int topePila) {
+		this.topePila = topePila;
+		
+	}
+
+	@Override
+	public void push(E elemento) {
+		// TODO Auto-generated method stub
+		push(elemento);
+	}
+
+	@Override
+	public E pop() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public E peek() {
+		return listaPila.get(listaPila.size() - 1);
+	}
+
+	@Override
+	public boolean isEmpty() {
+		return listaPila.isEmpty();
+	}
+
+	@Override
+	public boolean isFull() {
+		return listaPila.size() == topePila;
+	}
+
+}

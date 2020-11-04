@@ -1,0 +1,18 @@
+package ar.edu.ort.TP1.TP2.Ej1;
+
+public class EMail {
+//	private String cuenta;
+	private String dominio;
+	
+	private void setCuenta(String cuenta) {
+		this.cuenta = cuenta;
+	}
+
+	private void setDominio(String dominio) {
+		this.dominio = dominio;
+	}
+
+	public EMail(String direccion){
+		
+	}
+}

@@ -1,0 +1,35 @@
+package ar.edu.ort.TP1.TP2.Ej1;
+
+import java.util.ArrayList;
+
+public class Persona {
+	
+	private String nombre;
+	private String apellido;
+	private ArrayList <NumeroTelefonico> nrosTelefono;
+	private ArrayList<EMail> eMails;
+		
+	public Persona(String nom, String apel){
+		nrosTelefono = new ArrayList<>();
+		eMails = new ArrayList<>();
+		this.setApellido(apel);
+		this.setNombre(nom);
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public String getApellido() {
+		return apellido;
+	}
+
+	private void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	private void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+	
+}

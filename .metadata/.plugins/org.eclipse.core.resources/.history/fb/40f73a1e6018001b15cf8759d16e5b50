@@ -1,0 +1,11 @@
+package ar.edu.ort.TP1.TP2.Ej1;
+
+public class NumeroTelefonico {
+
+	private int característica;
+	private int numeroDeAbonado; 
+	private int codigoDePais;
+	private TipoDeLinea tipo;
+	
+	
+}

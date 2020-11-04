@@ -1,0 +1,27 @@
+package ar.edu.ort.TP1.TP3.ej01_Empleados;
+
+public class Asalariado extends Empleado{
+	public static final float SUELDO_DEFAULT = 0;
+	private float sueldo;
+	
+	public Asalariado(){
+		super();
+		this.sueldo = SUELDO_DEFAULT;
+	}
+	public Asalariado(float sueldo) {
+		super();
+		this.sueldo = sueldo;
+	}
+
+	public float getSueldo() {
+		return sueldo;
+	}
+
+	private void setSueldo(float sueldo) {
+		this.sueldo = sueldo;
+	}
+	
+	public tot
+ 
+	
+}

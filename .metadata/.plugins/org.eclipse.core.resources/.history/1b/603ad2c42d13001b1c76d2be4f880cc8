@@ -1,0 +1,48 @@
+package tp1.tp4.ej2;
+
+public class Persona {
+
+	static final int VALOR_AUN_VIVE = -9999;
+	private String nombreCompleto;
+	private int anioNacimiento;
+	private int anioFallecimiento;
+	private int anioActual;
+	
+	public Persona(String nombre, int anioActual) {
+		setNombreCompleto(nombre);
+		setAnioActual(anioActual);
+	}
+	
+	public Persona(String nombre, int anioNacimiento, int anioActual) {
+		setNombreCompleto(nombre);
+		setAnioActual(anioActual);
+		setAnioNacimiento(anioNacimiento);
+	}
+	
+	private void setAnioActual(int anioActual) {
+		this.anioActual = anioActual;
+	}
+
+	private void setNombreCompleto(String nombre) {
+		this.nombreCompleto = nombre;
+	}
+
+	private void setAnioNacimiento(int anioNacimiento) {
+		this.anioNacimiento = anioNacimiento;
+	}
+	
+	public void setAnioFallecimiento(int anio) {
+		this.anioFallecimiento = anio;
+	}
+
+	public String getNombreCompleto() {
+		return nombreCompleto;
+	}
+	
+	public int getAnioNacimiento() {
+		return anioNacimiento;
+	}
+	
+	public int getAnioFallecimiento() {
+		return anioFallecimiento;
+	}

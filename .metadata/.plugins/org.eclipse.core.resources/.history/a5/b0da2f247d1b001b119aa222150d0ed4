@@ -1,0 +1,10 @@
+package ar.edu.ort.TP1.TP3.ej01_Empleados;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

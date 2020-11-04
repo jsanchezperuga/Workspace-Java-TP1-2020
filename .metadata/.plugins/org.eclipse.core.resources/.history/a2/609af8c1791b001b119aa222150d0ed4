@@ -1,0 +1,5 @@
+package ar.edu.ort.TP1.TP3.ej01_Empleados;
+
+public class Subcontratadp extends Empleado {
+
+}

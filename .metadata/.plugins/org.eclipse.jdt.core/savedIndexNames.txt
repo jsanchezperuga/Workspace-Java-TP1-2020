@@ -1,0 +1,7 @@
+INDEX VERSION 1.127+C:\Users\JSanchezPeruga\Documents\2020 Analista de Sistemas\2do Cuatrimestre\Taller de Programacion 1\Workspace TP1\.metadata\.plugins\org.eclipse.jdt.core
+3017087871.index
+1657330681.index
+930499812.index
+1081179250.index
+509383259.index
+1580985504.index

@@ -1,0 +1,63 @@
+package ar.edu.ort.tp1.genericsD;
+
+import java.util.ArrayList;
+
+
+
+public class Cola<E> implements ICola<E> {
+
+	private int topeCola;
+
+	private ArrayList<E> listaCola;
+
+	public Cola(int topeCola) {		
+		setTopeCola(topeCola);
+		listaCola = new ArrayList<E>();
+	}
+
+	private void setTopeCola(int topeCola) {
+		this.topeCola =topeCola;		
+	}
+
+	public Cola() {
+		listaCola = new ArrayList<E>();
+	}
+
+	@Override
+	public void add(E elemento) {
+		
+		if (this.isFull()) {			
+			throw new RuntimeException("La cola esta llena");			
+		} 			
+			listaCola.add(elemento);			
+			System.out.println("Objeto agregado");
+	}
+
+	@Override
+	public E get() {
+		if(this.isEmpty()) {
+			throw new RuntimeException("La cola esta vacia");
+		}
+		return listaCola.get(0);
+	}
+
+	@Override
+	public E remove() {
+		if(this.isEmpty()) {
+			throw new RuntimeException("La cola esta vacia");
+		}
+		return listaCola.remove(0);
+	}
+	
+	@Override
+	public boolean isFull() {
+
+		return listaCola.size() == topeCola;
+	}
+	
+	@Override
+	public boolean isEmpty() {
+
+		return listaCola.size() == 0;
+	}
+}

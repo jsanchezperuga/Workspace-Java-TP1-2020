@@ -1,0 +1,20 @@
+package ar.edu.ort.TP1.TP2.Ej1;
+
+public class NumeroTelefonico {
+
+	private int caracteristica;
+	private int numeroDeAbonado; 
+	private int codigoDePais;
+	private TipoDeLinea tipo;
+	
+	public NumeroTelefonico(int caracteristica, int numeroDeAbonado, int codigoDePais, TipoDeLinea tipo) {
+		super();
+		this.caracteristica = caracteristica;
+		this.numeroDeAbonado = numeroDeAbonado;
+		this.codigoDePais = codigoDePais;
+		this.tipo = tipo;
+	}
+	
+	
+	
+}
